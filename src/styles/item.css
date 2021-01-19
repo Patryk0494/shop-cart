@@ -4,13 +4,19 @@ input, .items__quantity button {
   padding: 0;
 }
 
+.delete-btn, .edit-btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
 input {
   text-align: center;
 }
 
-.delete-btn {
-  outline: none;
-  border: none;
-  background-color: transparent;
+.items__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=item.css.map */

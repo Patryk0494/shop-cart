@@ -8,7 +8,7 @@ export default function Sumup() {
             <div className="sumup-wrapper">
                 <div className="sumup__subtotal">
                     <span>Subtotal</span>
-                    <span className="font--black">{totalPrice}</span>
+                    <span className="font--black"></span>
                 </div>
                 <div className="sumup__grandTotal">
                     <span>Grand Total</span>
