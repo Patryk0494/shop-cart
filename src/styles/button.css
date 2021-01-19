@@ -1,0 +1,25 @@
+button {
+  padding: 0;
+}
+
+.button {
+  padding: 0.875rem 1rem;
+  font-size: 0.625rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: #050203;
+  color: #ffffff;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button--bold {
+  font-weight: bold;
+}
+
+.button--thin {
+  padding: 0.625rem 0.75rem;
+}
+/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,43 @@
+$grey: #dddddd
+$lightGrey: #fbfbfb
+$black: #000000
+$border-prop: 1px solid $grey
+
+%tittle-prop
+    padding: 12px 15px
+    background-color: #f5f5f5
+
+.font--black
+    color: $black
+
+.sideContent
+    width: 23%
+
+.sideContent h3
+    text-transform: uppercase
+
+.shipping, .sumup h3
+    @extend %tittle-prop
+
+.shipping
+    border: $border-prop
+    margin-bottom: 15px
+
+.sumup-wrapper
+    padding: 25px 15px
+    background-color: $lightGrey
+
+.sumup
+    border: $border-prop
+    h3
+        border-bottom: $border-prop
+    &__subtotal, &__grandTotal
+        padding: 15px
+        font-size: 0.625rem
+        display: flex
+        justify-content: space-between
+
+    &__subtotal
+        border-bottom: $border-prop
+    button
+        width: 100%

@@ -1,0 +1,43 @@
+$col-templ: [first-col-start] 2fr [first-col-end second-col-start] 1fr [second-col-end third-col-start] 1fr [third-col-end fourth-col-start] 1fr [fourth-col-end]
+$border-prop: 1px solid #dddddd 
+%grid-temp
+    padding: 18px 0
+    display: grid
+    grid-template-columns: $col-templ
+    align-items: center
+
+.grid-wrapper
+    padding: 30px
+    display: flex
+    flex-direction: column
+    border: $border-prop
+
+.caption
+    @extend %grid-temp
+    border-bottom: $border-prop
+    &__name
+        grid-column: second-col-start / second-col-end
+    &__price
+        grid-column: third-col-start / third-col-end
+    &__qty
+        grid-column: fourth-col-start / fourth-col-end
+    
+
+.items
+    @extend %grid-temp
+    border-bottom: $border-prop
+    &__item
+        grid-column: first-col-start / first-col-end
+        display: flex
+    &__name
+        grid-column: second-col-start / second-col-end
+    &__price
+        grid-column: third-col-start / third-col-end
+    &__quantity
+        grid-column: fourth-col-start / fourth-col-end
+
+
+.update
+    @extend %grid-temp
+    button
+        grid-column: fourth-col-start / fourth-col-end
